@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PLUSXNERGY</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+</head>
+
+<header>
+    <div class="header">
+        <a class="logo">PLUS XNERGY</a>
+    <div class="header-right">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="history.html">History</a>
+        <a href="product.html">Product</a>
+        <a href="info.html">Info</a>
+        <a href="contact.html">Contact</a>
+        </div>
+      </div>
+</header>
+
+<article>
+    <h2><center>PLUS XNERGY</center></h2>
+    <center><button onclick="setTimeout(myFunction, 2000);">Click Me</button>
+    <script>function myFunction() {
+        alert('WELCOME');
+      }
+    </script></center>
+
+<br>
+
+<center><html>
+<body onload="startTime()">
+<div id="txt"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+</body>
+</html>
+</center>
+
+<br>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <div class="slideshow-container">
+        
+    <div class="mySlides fade">
+    <center><img src="h1.jpg" style="width:50%"></center>
+    </div>
+
+    <div class="mySlides fade">
+    <center><img src="h2.png" style="width:50%"></center>
+    </div>
+
+    <div class="mySlides fade">
+    <center><img src="h3.png" style="width:50%"></center>
+    </div>
+        
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+        
+    </div>
+    <br>
+        
+    <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+       
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+        
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+        
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+        
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
+</script>  
+
+  <br>
+  <h2><center>OVERVIEW</center></h2>
+  <center><p><u><sup>Plux Energy</sup></u> is dedicated to creating sustainable technology and renewable energy solutions, particularly in the areas of energy storage.</p></center>
+  <center><p>They develop cutting-edge energy storage devices that maximize the usage of renewable resources like wind and solar energy.</p></center>
+  <center><p>For both home and business users, their solutions are designed to increase energy efficiency, affordability, and sustainability.</p></center>
+
+</article>
+
+<footer>
+    <audio controls autoplay>
+    <source src="audio.ogg" type="audio/ogg">
+    <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+    <p><i>&copy; 2025 PLUS XNERGY</i></p>
+</footer>
