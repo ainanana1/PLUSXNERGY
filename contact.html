@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CONTACT</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="contact.css">
+</head>
+
+<header>
+    <div class="header">
+        <a class="logo" href="index.html"> <img src="logo.png" style="width: 25%;"></a>
+        </div>
+</header>
+
+<div class="info">
+  <strong>Info !</strong> If you have any question, feel free to ask us &#128513;
+</div>
+
+<article>
+  <center><h2>CONTACT PLUS XNERGY</h2></center>
+  
+  <center><p>Get in touch by <a href="mailto:hello.pxh@plusxnergy.com"> mail &#128231;</a></p></center>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <center><a href="https://www.facebook.com/PlusXnergy" class="fa fa-facebook"></a>
+  <a href="https://www.instagram.com/plusxnergy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="fa fa-instagram"></a>
+  <a href="https://www.youtube.com/channel/UCzT_Js97E7Apm-T9YWgxnMw" class="fa fa-youtube"></a>
+  <a href="https://www.linkedin.com/company/plusxnergy" class="fa fa-linkedin"></a></center>
+
+  <br>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+  <div class="slideshow-container">
+      
+  <div class="mySlides fade">
+  <center><img src="c3.png" style="width:50%"></center>
+  </div>
+
+  <div class="mySlides fade">
+  <center><img src="c1.png" style="width:50%"></center>
+  </div>
+
+  <div class="mySlides fade">
+  <center><img src="c2.png" style="width:50%"></center>
+  </div>
+      
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+      
+  </div>
+  <br>
+      
+  <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+     
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+      
+  function plusSlides(n) {
+  showSlides(slideIndex += n);
+  }
+      
+  function currentSlide(n) {
+  showSlides(slideIndex = n);
+  }
+      
+  function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  }
+
+</script>
+</article>
+
+<footer>
+    <p><i>&copy; 2025 PLUS XNERGY</i></p>
+</footer>
+
